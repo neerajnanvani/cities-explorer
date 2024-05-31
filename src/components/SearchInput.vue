@@ -1,7 +1,7 @@
 <template>
-    <div class="mt-1 relative rounded-md shadow-sm w-1/2">
+    <div class="mt-1 relative rounded-md shadow-sm lg:w-1/2 w-11/12">
         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <MagnifyingGlass class="h-5 w-5 text-gray-600 text-blue-800" aria-hidden="true" />
+            <MagnifyingGlass class="h-5 w-5 text-blue-800" aria-hidden="true" />
             <span class="mx-2 text-gray-500"> | </span>
         </div>
         <input :value="modelValue"  @input="$emit('update:modelValue', $event.target.value)"
